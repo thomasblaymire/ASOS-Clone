@@ -1,0 +1,7 @@
+
+Setup CSS Modules
+======
+- npm run eject 
+- webpack.config.dev.js & webpack.config.prod.js 
+- under test: /\.css$/, 
+- add modules: true, localIdentName: '[name]__[local]__[hash:base64:5]' within the options object. 

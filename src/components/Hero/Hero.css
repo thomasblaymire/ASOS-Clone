@@ -1,0 +1,73 @@
+.Hero {
+	margin: -8.2rem 0 0;
+	position: relative;
+	overflow: hidden;
+	text-align: center;
+	height: 60vh;
+	max-height: 85rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: url('../../assets/images/homepage/hero-image.jpg') no-repeat 0 0;
+	background-size: cover;
+	background-position: top;
+  font-family: 'Nunito', sans-serif;
+  border: solid 1px black;
+  z-index: -10;
+}
+
+
+
+.Hero__body {
+	z-index: 1000;
+	color: white;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 100%;
+}
+
+.Hero__title {
+	font-family: 'Nunito', sans-serif;
+	font-size: 4.5rem;
+	font-weight: 400;
+	margin: 0;
+	padding-bottom: 2rem;
+}
+
+.Hero__description {
+	font-size: 1rem;
+	font-weight: 300;
+	min-width: 58%;
+	margin: 0 auto;
+	line-height: 34px;
+	letter-spacing: 0.2px;
+}
+
+.Hero__description a {
+	color: #fff;
+	font-style: underline;
+}
+
+@media (min-width: 500px) {
+	.Hero__description {
+		font-size: 1.8rem;
+	}
+}
+
+.Hero__chevron {
+	position: absolute;
+	transform: translate3d(-50%, -50%, 0);
+	bottom: -210px;
+	left: 50%;
+	z-index: 50;
+	margin: 0;
+	padding: 0;
+	width: 4rem;
+	height: 4rem;
+	background: none;
+	border: none;
+	cursor: pointer;
+	outline: none;
+}
