@@ -1,6 +1,7 @@
 .Hero {
+	grid-column: center-start / span 8;
+	grid-row: 2;
 	margin: -8.2rem 0 0;
-	position: relative;
 	overflow: hidden;
 	text-align: center;
 	height: 60vh;
@@ -12,7 +13,6 @@
 	background-size: cover;
 	background-position: top;
   font-family: 'Nunito', sans-serif;
-  border: solid 1px black;
   z-index: -10;
 }
 

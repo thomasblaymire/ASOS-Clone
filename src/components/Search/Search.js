@@ -12,24 +12,24 @@ class Search extends Component {
 
   render() {
     return (
-      <div>
-        <form action="#" className={classes.Search}>
-          <input
-            onChange={this.handleChange.bind(this)}
-            type="text"
-            className={classes.Search__input}
-            placeholder="Search the lastest fashion trends..."
-          />
-          
+        <div>
+          <form action="#" className={classes.Search}>
+            <input
+              onChange={this.handleChange.bind(this)}
+              type="text"
+              className={classes.Search__input}
+              placeholder="Search the lastest fashion trends..."
+            />
+            
 
-          {/* <Button btnType="Search">
-            <svg className={classes.Search__icon}>
-              <use xlinkHref={`${allIcons}#icon-search`} />
-            </svg>
-          </Button>  */}
-        </form>
-      </div>
-    );
+            {/* <Button btnType="Search">
+              <svg className={classes.Search__icon}>
+                <use xlinkHref={`${allIcons}#icon-search`} />
+              </svg>
+            </Button>  */}
+          </form>
+        </div>
+    )
   }
 }
 

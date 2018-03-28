@@ -1,25 +1,25 @@
 .Toolbar {
-  display: grid;
-  grid-template-columns: [first] 40px [line2] 50px [line3] auto [col4-start] 50px [five] 40px [end];
-  grid-template-rows: [row1-start] 25% [row1-end] 100px [third-line] auto [last-line];
-
   width: 100%;
-  background: #363636;
+  grid-row:1;
+  grid-column: 1 / -1;
+  justify-content: center;
+  background: #2d2d2d;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .Toolbar__Logo {
-  grid-row: 1;
-  grid-column: 2 / 3;
+  padding-left: 2rem;
 }
 
 .Toolbar__Search {
-  grid-row: 1;
-  grid-column: 3 / 5;
+
 }
 
 .Toolbar__Navigation {
-  grid-row: 1;
-  grid-column: 6 / 8;
+  padding-right: 2rem;
 }
 
 

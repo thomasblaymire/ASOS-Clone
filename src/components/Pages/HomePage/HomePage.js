@@ -6,9 +6,9 @@ import Hero from './../../Hero/Hero';
 
 const Homepage = props => {
   return (
-    <section className={classes.Homepage}>
+    <section className={classes.Container}>
       <Toolbar />
-      {/* <Hero /> */}
+      <Hero />
 
       
       {/* <ProductList /> */}
