@@ -1,0 +1,108 @@
+.ProductItem {
+  background: #FFF;
+  border: solid 1px #dedede;
+  opacity: 1;
+  border-radius: 3px;
+  height: 38rem;
+  height: auto;
+  transition: all .4s ease;
+  text-align: left;
+  text-decoration: none;
+  margin: 0 auto;
+
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+}
+
+.ProductItem:hover {
+cursor: pointer;
+}
+
+.ProductItem:active {
+top: 1rem;
+transition: all .4s ease;
+}
+
+
+.ProductItem__Image {
+height: 35rem;
+width: 100%;
+grid-row: 1 / 2;
+grid-column: 1 / -1;
+z-index: 1;
+}
+
+.ProductItem__LikeSelect {
+z-index: 2;
+grid-row: 1 / 2;
+grid-column: 2 / 3;
+justify-self: end;
+margin: 1rem;
+}
+
+.ProductItem__LikeIcon {
+fill: #d45353;
+width: 3rem;
+height: 3rem;
+transition: all .4s ease;
+}
+
+.ProductItem_Top_Content {
+font-family: 'Roboto', sans-serif;
+padding: 2rem 1.5rem;
+height: 10rem;
+
+grid-column: 1 / -1;
+}
+
+.ProductItem_Top_Content__title {
+margin-bottom: 0px;
+padding: 0rem;
+font-size: 2.3rem;
+line-height: 2.5rem;
+padding-bottom: 0.5rem;
+color: #525252;
+font-weight: 500;
+}
+
+
+.ProductItem_Top_Content__description {
+font-size: 0.9rem;
+color: #949494;
+font-size: 1.6rem;
+line-height: 2.4rem;
+margin-bottom: 2.5rem;
+min-height: 7rem;
+}
+
+.ProductItem_Meta {
+width: 100%;
+}
+
+.ProductItem_Meta__seperator {
+width: 88%;
+margin: 0 auto;
+background: #b9b7b733;
+height: 0.13rem;
+}
+
+.ProductItem_Meta__image{
+margin-top: 1.5rem;
+border-radius: 50%;
+width: 45px;
+height: 45px;
+display: inline-block;
+vertical-align: middle;
+}
+
+.ProductItem_Meta__name {
+font-size: 1.5rem;
+color: #525252;
+padding-left: 10px;
+font-weight: 400;
+font-family: Roboto, sans-serif;
+vertical-align: middle;
+padding-top: 1.2rem;
+}

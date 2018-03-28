@@ -20,7 +20,7 @@ const toolbar = (props) => {
             </div>
 
             <div className={classes.Toolbar__Navigation}>
-                NAVIGATION
+                <NavigationItems />
             </div>
 
             {/* <nav className={classes.DesktopOnly}>
