@@ -1,7 +1,25 @@
+Project Features
+-----------------
+
+1) Ability to browse products by categories
+2) Ability to save products with relevant feedback and icon animation
+3) Ability to view a product and add it to my cart
+4) Ability to search for products
+5) Ability to sign/up and login
+6) Ability to add a product to basket and proceed to checkout
+
+
+
+
+
+
+
 
 Setup CSS Modules
 ======
-- npm run eject 
-- webpack.config.dev.js & webpack.config.prod.js 
-- under test: /\.css$/, 
-- add modules: true, localIdentName: '[name]__[local]__[hash:base64:5]' within the options object. 
+- npm run eject
+- webpack.config.dev.js & webpack.config.prod.js
+- under test: /\.css$/,
+- add modules: true, localIdentName: '[name]__[local]__[hash:base64:5]' within the options object.
+
+

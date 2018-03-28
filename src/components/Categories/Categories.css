@@ -1,0 +1,23 @@
+.Categories {
+    background-color: grey;
+    grid-column: 1 / -1;
+}
+
+.Categories__List {
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style-type: none;
+    cursor: pointer;
+}
+
+.Categories__List li {
+    padding: 0 10px;
+    height: 6vh;
+}
+
+.Categories__List li:hover {
+    background-color: white;
+    color: black;
+}

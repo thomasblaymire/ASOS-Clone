@@ -9,11 +9,11 @@ const navigationItems = (props) => {
       <ul className={classes.NavigationItems}>
           <NavigationItem link="/about">MEN</NavigationItem>
           <NavigationItem link="/articles">WOMEN</NavigationItem>
-          <a className={classes.NavigationItemsLink} link="/" onClick={props.clicked}>Sign Up</a>
+          {/* <a className={classes.NavigationItemsLink} link="/" onClick={props.clicked}>Sign Up</a>
 
           { !props.isAuthenticated
             ?  <a className={classes.NavigationItemsLink} link="/" onClick={props.clicked}>Login</a>
-            : <NavigationItem link="/dashboard">Profile</NavigationItem> }
+            : <NavigationItem link="/dashboard">Profile</NavigationItem> } */}
       </ul>
     );
 

@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+// import allIcons from '../../../../assets/images/icons/sprite.svg';
 
 import classes from './NavigationItem.css';
 
@@ -11,6 +12,9 @@ const navigationItem = (props) => (
             activeClassName={classes.active}>
             {props.children}
         </NavLink>
+
+
+
     </li>
 );
 
