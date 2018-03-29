@@ -1,35 +1,33 @@
-import React from 'react';
+import React from "react";
+import Utility from "./../../../hoc/Utility";
+import classes from "./Toolbar.css";
+import Logo from "../../Logo/Logo";
 
-import classes from './Toolbar.css';
-import Logo from '../../Logo/Logo';
+import NavigationItems from "../NavigationItems/NavigationItems";
+import Search from "../../Search/Search";
 
-import NavigationItems from '../NavigationItems/NavigationItems';
-import Search from '../../Search/Search';
+const toolbar = props => {
+  return (
+    <Utility>
+      <span className={classes.Toolbar__Bar}></span>
+      <header className={classes.Toolbar}>
+        <div className={classes.Toolbar__Logo}>
+          <Logo logoClickHandler={props.logoClickHandler} />
+        </div>
 
+        <div className={classes.Toolbar__Search}>
+          <Search />
+        </div>
 
-const toolbar = (props) => {
-    return (
-        <header className={classes.Toolbar}>
+        <div className={classes.Toolbar__Navigation}>
+          <NavigationItems />
+        </div> 
 
-            <div className={classes.Toolbar__Logo}>
-                <Logo logoClickHandler={props.logoClickHandler} />
-            </div>
+     
 
-            <div className={classes.Toolbar__Search}>
-                <Search />
-            </div>
-
-            <div className={classes.Toolbar__Navigation}>
-                <NavigationItems />
-            </div>
-
-            {/* <nav className={classes.DesktopOnly}>
-                <NavigationItems
-                    clicked={props.openLogin}
-                    isAuthenticated={props.isAuth} />
-            </nav>  */}
-        </header>
-    )
+      </header>
+    </Utility>
+  );
 };
 
 export default toolbar;

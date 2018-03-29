@@ -9,7 +9,8 @@ const Homepage = props => {
   return (
     <section className={classes.Container}>
       <Toolbar />
-      <Categories />
+        <Categories />
+
       {/* <Hero /> */}
 
 

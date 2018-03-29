@@ -1,18 +1,36 @@
 .Categories {
     background-color: grey;
+    grid-row: 2;
+    grid-column: center-start / center-end;
+}
+
+.Categories__Bar {
+    width: 100%;
+    background-color: grey;
+    grid-row: 2;
     grid-column: 1 / -1;
 }
 
 .Categories__List {
     color: white;
-    display: flex;
+    display: initial;
     align-items: center;
     flex-wrap: wrap;
     list-style-type: none;
     cursor: pointer;
+    grid-column: center-start / center-end;
+}
+
+@media(min-width: 480px) {
+    .Categories__List { 
+        
+        display: flex;
+    }
 }
 
 .Categories__List li {
+    display: flex;
+    align-items: center;
     padding: 0 10px;
     height: 6vh;
 }

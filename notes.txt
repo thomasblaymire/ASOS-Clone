@@ -11,10 +11,6 @@ Project Features
 
 
 
-
-
-
-
 Setup CSS Modules
 ======
 - npm run eject

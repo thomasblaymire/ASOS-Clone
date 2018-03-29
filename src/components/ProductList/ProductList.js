@@ -34,7 +34,6 @@ class ProductList extends Component {
     this.setState({ toggleLike: true });
   };
 
-
   render() {
     return (
       <Utility>
