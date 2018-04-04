@@ -15,7 +15,7 @@ class ProductListContainer extends Component {
 
   componentDidMount() {
     this.props.onFetchProducts();
-    console.log(this.props.data);
+    console.log(this.state);
   }
 
   render() {

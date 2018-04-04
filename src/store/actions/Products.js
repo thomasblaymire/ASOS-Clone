@@ -7,9 +7,10 @@ export const getProducts = () => {
     };
 };
 
-export const getProductsSuccess = () => {
+export const getProductsSuccess = ( products ) => {
     return {
-        type: actionTypes.GET_PRODUCTS_SUCCESS
+        type: actionTypes.GET_PRODUCTS_SUCCESS,
+        products: products
     };
 };
 
@@ -19,13 +20,13 @@ export const getProductsFail = () => {
     }
 };
 
+
 export const fetchProducts = () => {
     return dispatch => {
-        dispatch(getProducts());
         axios.get('http://www.mocky.io/v2/5abb62552d000047009bdc0f')
             .then( response => {
-                console.log(response);
-                dispatch(getProductsSuccess(response.data));
+                const fetchedProducts = response.data;
+                dispatch(getProductsSuccess(fetchedProducts));
             } )
             .catch( error => {
                 dispatch(getProductsFail(error));

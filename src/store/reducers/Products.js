@@ -7,18 +7,23 @@ const initialState = {
 };
 
 
+// Reducer to take products from the relvant action and to update state with new values.
 const reducer = (state = initialState, action) => {
-    // Eventually to add logic to create, update and delete
-    switch (action.types) {
+
+    console.log(state);
+
+    switch (action.type) {
         case actionTypes.GET_PRODUCTS:
         return {
             ...state,
-            loading: true
+            loading: true,
         };
         case actionTypes.GET_PRODUCTS_SUCCESS:
+        console.log('GET_PRODUCTS_SUCCESS AT HIT');
+        console.log(state);
         return {
             ...state,
-            loading: false
+            loading: false,
         }
         case actionTypes.GET_PRODUCTS_FAIL:
         return {
