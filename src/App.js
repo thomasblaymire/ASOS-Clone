@@ -1,17 +1,19 @@
-import React, { Component } from 'react';
-import { Route, BrowserRouter } from 'react-router-dom';
+import React, { Component } from "react";
+import { Route, BrowserRouter, Switch } from "react-router-dom";
 
-import Layout from './components/Layout/Layout';
-import Homepage from './components/Pages/HomePage/HomePage';
+import Layout from "./components/Layout/Layout";
+import ProductListContainer from "./containers/ProductListContainer";
 
 class App extends Component {
   render() {
     return (
-        <BrowserRouter>
-          <Layout>
-            <Route path="/" exct component={Homepage}></Route>
-          </Layout>
-        </BrowserRouter>
+      <div>
+        <Layout>
+          <Switch>
+            <Route path="/" exct component={ProductListContainer} />
+          </Switch>
+        </Layout>
+      </div>
     );
   }
 }

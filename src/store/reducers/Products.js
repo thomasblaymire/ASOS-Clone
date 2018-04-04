@@ -1,26 +1,30 @@
 import * as actionTypes from '../actions/actionTypes';
 
 const initialState = {
-    id: null,
-    title: null,
-    description: null,
-    image: null,
-    price: null
+    products: [],
+    loading: false,
+    error: false
 };
 
-const getProducts = (state, action) => {
-    return updateObject( state, {
-        id: null,
-        title: null,
-        description: null,
-        image: null,
-        price: null
-    });
-}
 
 const reducer = (state = initialState, action) => {
+    // Eventually to add logic to create, update and delete
     switch (action.types) {
-        case actionTypes.GET_PRODUCTS: return getProducts(state, action);
+        case actionTypes.GET_PRODUCTS:
+        return {
+            ...state,
+            loading: true
+        };
+        case actionTypes.GET_PRODUCTS_SUCCESS:
+        return {
+            ...state,
+            loading: false
+        }
+        case actionTypes.GET_PRODUCTS_FAIL:
+        return {
+            ...state,
+            error: true
+        };
         default:
             return state;
     }
