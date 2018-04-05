@@ -1,7 +1,7 @@
 .Toolbar {
   width: 100%;
-  grid-row:1;
-  grid-column: 1 / -1;
+  height: 10vh;
+
   justify-content: center;
   background: #2d2d2d;
 

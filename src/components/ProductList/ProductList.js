@@ -20,8 +20,10 @@ class ProductList extends Component {
       ));
     }
     return (
-      <div className={classes.ProductList}>
-        {products}
+      <div className="container">
+        <div className="row justify-content-center">
+          {products}
+        </div>
       </div>
     );
   }

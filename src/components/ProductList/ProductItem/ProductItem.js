@@ -9,7 +9,8 @@ const productItem = props => {
   console.log(like);
 
   return (
-    <div className={classes.ProductItem}>
+    <div className="col-xs-4">
+        <div className={classes.ProductItem}>
       <img className={classes.ProductItem__Image} src={props.image} alt="Blog" />
       <div className={classes.ProductItem__LikeSelect} onClick={props.onLikeToggle}>
         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
@@ -25,6 +26,8 @@ const productItem = props => {
 
       </div>
     </div>
+    </div>
+
   );
 };
 
