@@ -3,13 +3,12 @@ import { connect } from "react-redux";
 import * as actions from "../store/actions/index";
 
 import Utility from "./../hoc/Utility";
-import ProductItem from "./../components/ProductList/ProductItem/ProductItem";
+import ProductList from "./../components/ProductList/ProductList";
 
 class ProductListContainer extends Component {
   state = {
     products: [],
-    loading: true,
-    toggleLikeIcon: false
+    error: null
   };
 
   componentDidMount() {
@@ -17,33 +16,11 @@ class ProductListContainer extends Component {
   }
 
   render() {
-    let products = null;
-    if (this.props.products) {
-      products = this.props.products.map(product => (
-        <ProductItem
-          toggleLikeIcon={this.state.toggleLikeIcon}
-          onLikeToggle={this.onLikeToggle}
-          key={product.id}
-          id={product.id}
-          title={product.title}
-          image={product.images}
-          description={product.description}
-          price={product.price}
-        />
-      ));
-    }
-    return (
-      <section>
-        <Utility>
-          <div>{products}</div>
-        </Utility>
-      </section>
-    );
+    return <ProductList products={this.props.products} />;
   }
 }
 
 const mapStateToProps = state => {
-  console.log(state.products[0]);
   return {
     products: state.products[0],
     error: state.products.error

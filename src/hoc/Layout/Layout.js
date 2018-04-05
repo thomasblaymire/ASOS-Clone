@@ -13,7 +13,7 @@ class Layout extends Component {
         <div className={classes.Container}>
           <Toolbar />
           <Categories />
-          <main className={classes.Content}>{this.props.children}</main>
+          {this.props.children}
         </div>
       </Utility>
     );
