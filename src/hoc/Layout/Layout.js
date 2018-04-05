@@ -10,9 +10,11 @@ class Layout extends Component {
   render() {
     return (
       <Utility>
-        <Toolbar />
-        <Categories />
-        <main className={classes.Content}>{this.props.children}</main>
+        <div className={classes.Container}>
+          <Toolbar />
+          <Categories />
+          <main className={classes.Content}>{this.props.children}</main>
+        </div>
       </Utility>
     );
   }

@@ -11,9 +11,6 @@ const Homepage = props => {
       <Toolbar />
         <Categories />
 
-      {/* <Hero /> */}
-
-
       <ProductList />
 
     </section>

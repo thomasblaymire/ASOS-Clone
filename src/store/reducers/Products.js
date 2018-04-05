@@ -1,14 +1,10 @@
 import * as actionTypes from '../actions/actionTypes';
 
-const initialState = {
-    products: [],
-    loading: false,
-    error: false
-};
 
 
+const productReducerDefaultState = [];
 // Reducer to take products from the relvant action and to update state with new values.
-const reducer = (state = initialState, action) => {
+const reducer = (state = productReducerDefaultState, action) => {
 
     console.log(state);
 
@@ -19,12 +15,10 @@ const reducer = (state = initialState, action) => {
             loading: true,
         };
         case actionTypes.GET_PRODUCTS_SUCCESS:
-        console.log('GET_PRODUCTS_SUCCESS AT HIT');
-        console.log(state);
-        return {
+        return [
             ...state,
-            loading: false,
-        }
+            action.products
+        ]
         case actionTypes.GET_PRODUCTS_FAIL:
         return {
             ...state,
