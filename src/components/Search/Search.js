@@ -6,8 +6,12 @@ import classes from "./Search.css";
 
 class Search extends Component {
 
+  state = {
+    searchTerm: ''
+  }
+
   handleChange = event => {
-    console.log("input value is" + event.target.value);
+    this.setState({searchTerm: event.target.value.substr(0, 20)});
   };
 
   render() {
@@ -16,17 +20,11 @@ class Search extends Component {
           <form action="#" className={classes.Search}>
             <input
               onChange={this.handleChange.bind(this)}
+              value={this.state.searchTerm}
               type="text"
               className={classes.Search__input}
-              placeholder="Search the lastest fashion trends..."
-            />
+              placeholder="Search the lastest fashion trends..."/>
             
-
-            {/* <Button btnType="Search">
-              <svg className={classes.Search__icon}>
-                <use xlinkHref={`${allIcons}#icon-search`} />
-              </svg>
-            </Button>  */}
           </form>
         </div>
     )
