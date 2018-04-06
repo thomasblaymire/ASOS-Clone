@@ -2,13 +2,13 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import * as actions from "../store/actions/index";
 
-import Utility from "./../hoc/Utility";
 import ProductList from "./../components/ProductList/ProductList";
 
 class ProductListContainer extends Component {
   state = {
     products: [],
-    error: null
+    error: null,
+    liked: false
   };
 
   componentDidMount() {
@@ -16,7 +16,8 @@ class ProductListContainer extends Component {
   }
 
   render() {
-    return <ProductList products={this.props.products} />;
+    return <ProductList 
+              products={this.props.products} />;
   }
 }
 

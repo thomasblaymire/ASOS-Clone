@@ -20,6 +20,12 @@ export const getProductsFail = () => {
     }
 };
 
+export const filterProducts = (searchTerm) => {
+    return {
+        type: actionTypes.FILTER_PRODUCTS,
+        searchTerm
+    }
+}
 
 export const fetchProducts = () => {
     return dispatch => {

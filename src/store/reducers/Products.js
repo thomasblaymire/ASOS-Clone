@@ -21,6 +21,10 @@ const reducer = (state = productReducerDefaultState, action) => {
             ...state,
             error: true
         };
+        case actionTypes.FILTER_PRODUCTS:
+        return {
+            
+        }
         default:
             return state;
     }

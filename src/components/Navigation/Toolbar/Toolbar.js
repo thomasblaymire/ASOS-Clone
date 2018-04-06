@@ -23,8 +23,6 @@ const toolbar = props => {
           <NavigationItems />
         </div> 
 
-     
-
       </header>
     </Utility>
   );

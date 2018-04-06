@@ -9,7 +9,6 @@
   text-decoration: none;
   width: 30rem;
   margin: 10px;
-  
 }
 
 .ProductItem:hover {
@@ -41,7 +40,7 @@
 }
 
 .ProductItem__LikeSelect svg:hover {
-  fill: black;
+  fill: #db4040;
   transition: all 0.4s ease;
 }
 
