@@ -1,39 +1,36 @@
-import React, { Component } from "react";
-import { connect } from "react-redux";
-import * as actions from "../store/actions/index";
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import * as actions from '../store/actions/index';
 
-import ProductList from "./../components/ProductList/ProductList";
+import ProductList from './../components/ProductList/ProductList';
 
 class ProductListContainer extends Component {
-  state = {
-    products: [],
-    error: null,
-    liked: false
-  };
+	state = {
+		products: [],
+		error: null,
+		liked: false,
+	};
 
-  componentDidMount() {
-    this.props.onFetchProducts();
-  }
+	componentDidMount() {
+		this.props.onFetchProducts();
+	}
 
-  render() {
-    return <ProductList 
-              products={this.props.products} />;
-  }
+	render() {
+		return <ProductList products={this.props.products} />;
+	}
 }
 
 const mapStateToProps = state => {
-  return {
-    products: state.products[0],
-    error: state.products.error
-  };
+	return {
+		products: state.products[0],
+		error: state.products.error,
+	};
 };
 
 const mapDispatchToProps = dispatch => {
-  return {
-    onFetchProducts: () => dispatch(actions.fetchProducts())
-  };
+	return {
+		onFetchProducts: () => dispatch(actions.fetchProducts()),
+	};
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(
-  ProductListContainer
-);
+export default connect(mapStateToProps, mapDispatchToProps)(ProductListContainer);

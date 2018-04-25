@@ -1,12 +1,11 @@
 /* Search */
 .Search__input {
-  border: none;
-  width: 700px;
-  padding: 1rem 2rem;
-  transition: all .2s;
-  font-size: 1.5rem;
-  font-family: Roboto, sans-serif;
-  border-radius: 25px;
-  outline: none;
+	border: none;
+	width: 700px;
+	padding: 1rem 2rem;
+	transition: all 0.2s;
+	font-size: 1.5rem;
+	font-family: Roboto, sans-serif;
+	border-radius: 25px;
+	outline: none;
 }
-
