@@ -20,7 +20,7 @@ const toolbar = props => {
 				</div>
 
 				<div className={classes.Toolbar__Navigation}>
-					<NavigationItems />
+					<NavigationItems auth={props.auth} />
 				</div>
 			</header>
 		</Utility>

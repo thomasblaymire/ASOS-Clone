@@ -2,8 +2,6 @@ import React from 'react';
 import classes from './ProductItem.css';
 
 const productItem = props => {
-	console.log(props);
-
 	return (
 		<div className="col-xs-4">
 			<div className={classes.ProductItem}>
